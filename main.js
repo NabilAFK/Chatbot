@@ -2,9 +2,9 @@ const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
 const BOT_IMG = "bot.png";
-const PERSON_IMG = "user.png";
+const PERSON_IMG = "https://i.ibb.co/fCd5S27/Untitled-26-removebg-preview.png";
 const BOT_NAME = "BOT";
-const PERSON_NAME = "Coderider";
+const PERSON_NAME = "NabilAFK";
 const prompts = [
   ["hi", "hey", "hello", "good morning", "good afternoon"],
   ["how are you", "how is life", "how are things"],
@@ -18,6 +18,9 @@ const prompts = [
     "may i know your name",
     "what is your name",
     "what call yourself"
+    "whats yo name"
+    "what's your name"
+    "whats your name"
   ],
   ["i love you"],
   ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
@@ -47,7 +50,7 @@ const replies = [
   ],
   ["I am infinite"],
   ["I am just a bot", "I am a bot. What are you?"],
-  ["The one true God, JavaScript"],
+  ["NabilAFK!"],
   ["I am nameless", "I don't have a name"],
   ["I love you too", "Me too"],
   ["Have you ever felt bad?", "Glad to hear it"],
@@ -58,19 +61,19 @@ const replies = [
   ["Sushi", "Pizza"],
   ["Bro!"],
   ["Great question"],
-  ["That's ok", "I understand", "What do you want to talk about?"],
-  ["Please say something :("],
+  ["That's okay", "I understand", "What do you want to talk about?"],
+  ["Please say something. :("],
   ["Haha!", "Good one!"]
 ];
 const alternative = [
   "Same",
-  "Go on...",
-  "Bro...",
-  "Try again",
-  "I'm listening...",
-  "I don't understand :/"
+  "Go on..",
+  "Bro..",
+  "Try again, I couldn't understand.",
+  "I'm listening..",
+  "I don't understand. :("
 ]
-const robot = ["How do you do, fellow human", "I am not a bot"];
+const robot = ["How do you do, fellow human", "I am not a robot, I was made by NabilAFK"];
 msgerForm.addEventListener("submit", event => {
   event.preventDefault();
   const msgText = msgerInput.value;
